@@ -1,4 +1,4 @@
-package com.blockyheadman.arcoscompanion.ui.theme
+package nl.izkarcos.arcoscompanion.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.blockyheadman.arcoscompanion.ui.onboarding
+package nl.izkarcos.arcoscompanion.ui.onboarding
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -28,9 +28,9 @@ import androidx.navigation.compose.rememberNavController
 import androidx.wear.compose.material3.ExperimentalWearMaterial3Api
 import androidx.wear.compose.material3.HorizontalPageIndicator
 import androidx.wear.compose.material3.rememberPageIndicatorState
-import com.blockyheadman.arcoscompanion.R
-import com.blockyheadman.arcoscompanion.ui.theme.ArcOSCompanionTheme
 import kotlinx.coroutines.launch
+import nl.izkarcos.arcoscompanion.R
+import nl.izkarcos.arcoscompanion.ui.theme.ArcOSCompanionTheme
 
 sealed class OnboardingPage(
     @DrawableRes

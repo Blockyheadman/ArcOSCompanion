@@ -1,14 +1,16 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+
+    id("com.google.devtools.ksp")
 }
 
 android {
-    namespace = "com.blockyheadman.arcoscompanion"
+    namespace = "nl.izkarcos.arcoscompanion"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.blockyheadman.arcoscompanion"
+        applicationId = "nl.izkarcos.arcoscompanion"
         minSdk = 30
         targetSdk = 34
         versionCode = 1
@@ -40,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.12"
     }
     packaging {
         resources {
@@ -60,9 +62,10 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-    implementation(libs.androidx.compose.material3) // added for extra material3 compose items
-    implementation(libs.androidx.navigation.compose) // added for navigation
-    implementation(libs.androidx.core.splashscreen) // added for splash screen
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.datastore)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
